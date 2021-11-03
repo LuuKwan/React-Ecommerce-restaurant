@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3259fe4c.chunk.css",
+    "main.js": "/static/js/main.a5848e64.chunk.js",
+    "main.js.map": "/static/js/main.a5848e64.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.33e2de3e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.33e2de3e.js.map",
+    "static/js/2.a86b0028.chunk.js": "/static/js/2.a86b0028.chunk.js",
+    "static/js/2.a86b0028.chunk.js.map": "/static/js/2.a86b0028.chunk.js.map",
+    "static/js/3.35cf670d.chunk.js": "/static/js/3.35cf670d.chunk.js",
+    "static/js/3.35cf670d.chunk.js.map": "/static/js/3.35cf670d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.3259fe4c.chunk.css.map": "/static/css/main.3259fe4c.chunk.css.map",
+    "static/js/2.a86b0028.chunk.js.LICENSE.txt": "/static/js/2.a86b0028.chunk.js.LICENSE.txt",
+    "static/media/Logo.f6ae2c4c.svg": "/static/media/Logo.f6ae2c4c.svg",
+    "static/media/App.css": "/static/media/pattern-lines.df381b88.svg",
+    "static/media/family-gathering-tablet.2adedf9d.jpg": "/static/media/family-gathering-tablet.2adedf9d.jpg",
+    "static/media/pattern-curve-top-left.77f903fb.svg": "/static/media/pattern-curve-top-left.77f903fb.svg",
+    "static/media/pattern-curve-top-right.df37c69d.svg": "/static/media/pattern-curve-top-right.df37c69d.svg",
+    "static/media/pattern-divide.bf6d0c5c.svg": "/static/media/pattern-divide.bf6d0c5c.svg",
+    "static/media/salmon-mobile.7bd94a87.jpg": "/static/media/salmon-mobile.7bd94a87.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.33e2de3e.js",
+    "static/js/2.a86b0028.chunk.js",
+    "static/css/main.3259fe4c.chunk.css",
+    "static/js/main.a5848e64.chunk.js"
+  ]
+}
