@@ -1,0 +1,138 @@
+.specialty {
+  margin-top: 5rem;
+  background: #f2994a;
+  padding: 4.6875rem 1.5rem;
+  display: grid;
+  gap: 4rem;
+  color: white;
+  text-align: center;
+
+  &-text {
+    .line {
+      margin-bottom: 2.1875rem;
+    }
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: -0.4px;
+      position: relative;
+    }
+    p {
+      font-size: 0.9375rem;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: -0.19px;
+      margin-top: 1rem;
+    }
+  }
+
+  .specialty-dishes-container {
+    display: grid;
+    gap: 3.125rem;
+    .dish {
+      display: grid;
+      gap: 1.9375rem;
+
+      &-image {
+        img {
+          width: 300px;
+          height: 300px;
+        }
+      }
+      &-info {
+        .title {
+          font-size: 1.125rem;
+          font-weight: 700;
+          line-height: 28px;
+          letter-spacing: -0.22px;
+          margin-bottom: 0.25rem;
+        }
+        .description {
+          font-size: 0.9375rem;
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: -0.19px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 735px) {
+    padding: 6.25rem 6.0625rem;
+    gap: 3.75rem;
+    margin-top: 0%;
+    &-text {
+      .line {
+      }
+      h2 {
+        font-size: 2.5rem;
+        line-height: 56px;
+        letter-spacing: -0.5px;
+      }
+      p {
+        font-size: 1.125rem;
+        line-height: 30px;
+        letter-spacing: -0.22px;
+      }
+    }
+    .specialty-dishes-container {
+      gap: 3.75rem;
+
+      .dish {
+        // &:not(:nth-last-child(1)) {
+        //   &::before {
+        //     content: "";
+        //     height: 20px;
+        //     width: 100%;
+        //     background-color: red;
+        //   }
+        // }
+
+        grid-template-columns: 200px auto;
+        gap: 3.875rem;
+        text-align: left;
+
+        &-image {
+          position: relative;
+          img {
+            width: 128px;
+            height: 96px;
+          }
+          &::before {
+            content: "";
+            height: 2px;
+            width: 34px;
+            background: #9e7f66;
+
+            position: absolute;
+            top: 20%;
+            left: 79%;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    margin-top: 0px;
+    padding-top: 200px;
+    padding-bottom: 124px;
+    padding-left: 165px;
+    padding-right: 165px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7.8125rem;
+    text-align: left;
+
+    &-text {
+      .line {
+      }
+      h2 {
+      }
+      p {
+      }
+    }
+    .specialty-dishes-container {
+      margin-top: 4.6875rem;
+    }
+  }
+}

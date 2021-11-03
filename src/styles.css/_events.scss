@@ -1,0 +1,209 @@
+.events {
+  position: relative;
+  width: 100%;
+  margin-bottom: 3rem;
+  // have to have a height
+  //height: 48rem;
+  .curve {
+    width: 100%;
+    position: relative;
+    display: none;
+    img {
+    }
+  }
+  .event-container {
+    margin-top: 5rem;
+    padding: 0 1.5rem;
+    text-align: center;
+    width: 100%;
+    //height: 100%;
+    position: relative;
+    display: flex;
+    //overflow: hidden;
+    //height: 48rem;
+
+    .event {
+      // have to have a height
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+      transition: opacity 500ms ease-in-out;
+
+      .event-image {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        &::after {
+          content: "";
+          width: 64%;
+          max-width: 250px;
+          margin: 0 auto;
+          box-shadow: 0 6px 50px 13px hsla(217°, 14%, 42%, 0.7);
+          background: transparent;
+          position: relative;
+          z-index: 2;
+        }
+      }
+
+      .event-text {
+        &__nav {
+          margin-top: 4rem;
+          margin-bottom: 1.5rem;
+          color: #4c4c4c;
+
+          button {
+            border: none;
+            background: transparent;
+            width: max-content;
+
+            h4 {
+              opacity: 0.5;
+              font-size: 0.875rem;
+              line-height: 28px;
+              letter-spacing: 2px;
+              &.active {
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        &__description {
+          h2 {
+            font-size: 2rem;
+            line-height: 40px;
+            letter-spacing: -0.4px;
+          }
+          p {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            font-size: 0.9375rem;
+            line-height: 25px;
+            letter-spacing: -0.19px;
+          }
+        }
+      }
+
+      &.active-slide {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 500ms ease-in-out;
+      }
+      // &.current-slide {
+      //   transform: translateX(0);
+      //   opacity: 1;
+      //   transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
+      // }
+      // &.next-slide {
+      //   transform: translateX(100%);
+      //   opacity: 1;
+      //   transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
+      // }
+      // &.previous-slide {
+      //   transform: translateX(-100%);
+      //   opacity: 1;
+      //   transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
+      // }
+    }
+  }
+
+  @media screen and (min-width: 735px) {
+    //height: 60rem;
+    .curve {
+      //margin-bottom: 37rem;
+      display: block;
+      img {
+        position: relative;
+        transform: translateX(-60%);
+      }
+    }
+    .event-container {
+      margin: 0;
+      padding: 0 2.5rem;
+      position: absolute;
+      top: 6rem;
+
+      .event {
+        .event-image {
+          padding: 0 2.563rem;
+          position: relative;
+          max-width: 750px;
+          margin: 0 auto;
+          &::before {
+            content: "";
+            background-image: url("../src/images/patterns/pattern-lines.svg");
+            width: 160px;
+            height: 68px;
+            position: absolute;
+            left: 0rem;
+            top: -2rem;
+          }
+        }
+
+        .event-text {
+          &__nav {
+            display: flex;
+            justify-content: space-evenly;
+          }
+          &__description {
+            padding: 3.125rem 3.625rem;
+            h2 {
+              font-size: 2.5rem;
+              line-height: 56px;
+              letter-spacing: -0.5px;
+            }
+            p {
+              margin-top: 1rem;
+              margin-bottom: 2rem;
+              font-size: 1.125rem;
+              line-height: 30px;
+              letter-spacing: -0.22px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    .event-container {
+      .event {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .event-image {
+          width: 540px;
+        }
+
+        .event-text {
+          display: grid;
+          text-align: left;
+          &__nav {
+            order: 1;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            gap: 0.75rem;
+          }
+          &__description {
+            padding: 3.125rem 0;
+            padding-right: 10.3125rem;
+            h2 {
+              font-size: 2.5rem;
+              line-height: 56px;
+              letter-spacing: -0.5px;
+            }
+            p {
+              margin-top: 1rem;
+              margin-bottom: 2rem;
+              font-size: 1.125rem;
+              line-height: 30px;
+              letter-spacing: -0.22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

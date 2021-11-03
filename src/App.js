@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
+import { Footer, Navbar, Sidebar } from "./components/index_component";
+import {
+  ReservePage,
+  HomePage,
+  MenuPage,
+  CartPage,
+  CheckoutPage,
+} from "./Pages";
 
+//import Testing from "./components/Testing";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Sidebar />
+        <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route exact path="/reserve-table">
+            <ReservePage />
+          </Route>
+          <Route exact path="/menu">
+            <MenuPage />
+          </Route>
+          <Route exact path="/cart">
+            <CartPage />
+          </Route>
+          <Route exact path="/checkout">
+            <CheckoutPage />
+          </Route>
+        </Switch>
+        {/* footer will be here */}
+        <Footer />
+      </Router>
+    </>
   );
 }
 

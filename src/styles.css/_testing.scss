@@ -1,0 +1,14 @@
+.parent {
+  position: relative;
+  overflow: hidden;
+  h4 {
+    display: none;
+    @media screen and (min-width: 735px) {
+      display: block;
+    }
+  }
+
+  .child {
+    position: absolute;
+  }
+}

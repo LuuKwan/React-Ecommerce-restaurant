@@ -1,0 +1,113 @@
+.header {
+  &-img {
+    background-image: url("../src/images/homepage/hero-bg-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 760px;
+    background-color: hsl(27%, 22%, 51%);
+    background-blend-mode: revert;
+  }
+  &-info {
+    background-color: black;
+    color: white;
+    padding: 0 1.5em;
+    text-align: center;
+
+    .info-container {
+      position: absolute;
+      top: 300px;
+      left: 0;
+      right: 0;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      padding-top: 0.625em;
+    }
+
+    h2 {
+      font-size: 2rem;
+      line-height: 40px;
+      letter-spacing: -0.4px;
+      font-weight: 400;
+      padding: 2rem 0 1.5rem 0;
+    }
+    p {
+      font-size: 0.9375rem;
+      line-height: 25px;
+      font-weight: 400;
+      letter-spacing: -0.19px;
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 735px) {
+    // tablet version
+    &-img {
+      background-image: url("../src/images/homepage/hero-bg-tablet.jpg");
+      height: 830px;
+    }
+    &-info {
+      top: 365px;
+
+      h1 {
+        font-size: 3.25rem;
+      }
+      h2 {
+        font-size: 3rem;
+        line-height: 64px;
+        letter-spacing: -0.6px;
+        width: 70%;
+        margin: 2rem auto 1.5rem auto;
+      }
+      p {
+        font-size: 1.125rem;
+        line-height: 30px;
+        letter-spacing: -0.22px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+
+    &-img {
+      order: 2;
+      background-image: url("../src/images/homepage/hero-bg-desktop@2x.jpg");
+      background-position: right;
+    }
+    &-info {
+      order: 1;
+      top: 0;
+      position: static;
+      height: auto;
+      display: flex;
+      align-items: center;
+
+      .info-container {
+        position: absolute;
+        left: 8%;
+        right: 0px;
+        text-align: left;
+        max-width: 618px;
+        top: auto;
+
+        h1 {
+        }
+        h2 {
+          width: auto;
+          font-size: 4rem;
+          line-height: 72px;
+          letter-spacing: -0.8px;
+        }
+        p {
+          margin: 1.5em 0 2.625em 0;
+          font-size: 1.125rem;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
