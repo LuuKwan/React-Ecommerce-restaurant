@@ -188,7 +188,7 @@ export const ReserveForm = ({ setIsBook }) => {
       />
       <div className="underline"></div>
       <button type="submit" class="confirm-btn">
-        Confirm reversation
+        Confirm reservation
       </button>
     </Wrapper>
   );
